@@ -39,13 +39,10 @@ main{
 }
 
 .inputContainer {
-    position: relative;
     display: flex;
 }
 
 .inputContainer input{
-    border-radius: .375em;
-    flex-grow: 1;
     padding: 10px;
     border: transparent;
     outline-color: transparent;
@@ -53,12 +50,8 @@ main{
 
 .buttonBuscar {
     width: 30px;
-    height: 30px;
+    height: 36px;
     background-color: white;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     color: white;
     border: none;
     cursor: pointer;
@@ -186,14 +179,6 @@ main{
     text-decoration: none;
     list-style: none;
 }
-.textMenu{
-    display: flex;
-    flex-direction: row;
-}
-.textMenu li a{
-    text-decoration: none;
-    color: #000;
-}
 .burger-menu{
     text-align: center;
     margin-top: 15px;
@@ -208,113 +193,26 @@ main{
     padding: 15px;
     background-color: blue;
 }
-.footer-section{
+.textMenu{
+    display: flex;
+    flex-direction: row;
+}
+.textMenu li a{
+    text-decoration: none;
+    color: #000;
+}
+.footerSection{
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.footer-section i{
+.footerSection i{
     color: rgb(11, 49, 219);
 }
-.form-register{
-    padding: 25px;
+.footerSection i:hover{
+    color: #000;
 }
-.form-register-container{
-    padding: 25px;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.perfil-form-container{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-.input-intereses{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.form-register-name-username{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.form-register-name-username input{
-    width: 35%;
-    height: 25px;
-    border: 0;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
-    border-radius: .375em;
-    outline-color: #3483fa;
-}
-.form-register-email-password{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.form-register-email-password input{
-    width: 35%;
-    height: 25px;
-    border: 0;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
-    border-radius: .375em;
-    outline-color: #3483fa;
-}
-.form-register-adress{
-    display: flex;
-    justify-content: space-around;
-}
-.form-register-adress input{
-    width: 85%;
-    height: 25px;
-    border: 0;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
-    border-radius: .375em;
-    outline-color: #3483fa;
-}
-.form-register-date{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.form-register-type{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.form-register-interests{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.form-register-button{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form-register-button button{
-    width: 30%;
-    height: 30px;
-    background-color: #666;
-    border-radius: .375em;
-    text-decoration: none;
-    color: white;
-    border-color: transparent;
-}
-.form-register-button button:hover{
-    background-color: #0022AA;
-}
-.form-register-container{
-    text-align: center;
-}
+
 .form-login-email-password{
     margin-top: 30px;
     display: flex;
@@ -342,16 +240,12 @@ main{
     text-decoration: none;
     color: #1259c3;
 }
-.footer-section i:hover{
-    color: #000;
-}
-
 
 @media (max-width: 361px){
     .menu{
         display: none;
     }
-    .burguer-menu{
+    .burger-menu{
         display: block;
     }
     .product{
@@ -495,4 +389,103 @@ main{
     .product{
         flex-basis: 40%;
     }
+}
+.form-register{
+    padding: 25px;
+}
+.form-register-container{
+    padding: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.perfil-form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.input-intereses{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.form-register-name-username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-name-username input{
+    width: 35%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-email-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-email-password input{
+    width: 35%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-adress{
+    display: flex;
+    justify-content: space-around;
+}
+.form-register-adress input{
+    width: 85%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form-register-interests{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-register-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-register-button button{
+    width: 30%;
+    height: 30px;
+    background-color: #666;
+    border-radius: .375em;
+    text-decoration: none;
+    color: white;
+    border-color: transparent;
+}
+.form-register-button button:hover{
+    background-color: #0022AA;
+}
+.form-register-container{
+    text-align: center;
 }
