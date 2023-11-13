@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EAC926;
+}
+main{
+    background-color: #ebebeb;
+}
+.img-header{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 90vw;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+.header-container img{
+    flex-basis: 33%;
+}
+
+.buscar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+}
+
+.inputContainer input{
+    border-radius: .375em;
+    flex-grow: 1;
+    padding: 10px;
+    border: transparent;
+    outline-color: transparent;
+}
+
+.buttonBuscar {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.banner-home{
+    width: 100%;
+}
+.product{
+    background-color: white;
+}
+.products-lastvisit{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.product-details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.product-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-details i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.product-details:hover i {
+    transform: rotate(-90deg);
+}
+.product-price-disc{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.texto{
+    font-size: 12px;
+}
+.products-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #666;
+}
+.titulares{
+    font-size: 24px;
+}
+.price{
+    width: 30%;
+    font-size: 18px;
+}
+.discount{
+    width: 70%;
+    color: rgb(7, 173, 29);
+    font-size: 16px;
+}
+.descripciones{
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.buttonBuscar i{
+    background-color: white;
+}
+.cuotasHeader{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cuotasHeader p{
+    text-align: center;
+}
+
+.menuHeader{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.menuAccount{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.textMenu{
+    display: flex;
+    flex-direction: row;
+}
+.textMenu li a{
+    text-decoration: none;
+    color: #000;
+}
+.burger-menu{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.burger-menu i{
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background-color: blue;
+}
+.footer-section{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.footer-section i{
+    color: rgb(11, 49, 219);
+}
+.form-register{
+    padding: 25px;
+}
+.form-register-container{
+    padding: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.perfil-form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.input-intereses{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.form-register-name-username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-name-username input{
+    width: 35%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-email-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-email-password input{
+    width: 35%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-adress{
+    display: flex;
+    justify-content: space-around;
+}
+.form-register-adress input{
+    width: 85%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-register-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-register-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form-register-interests{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-register-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-register-button button{
+    width: 30%;
+    height: 30px;
+    background-color: #666;
+    border-radius: .375em;
+    text-decoration: none;
+    color: white;
+    border-color: transparent;
+}
+.form-register-button button:hover{
+    background-color: #0022AA;
+}
+.form-register-container{
+    text-align: center;
+}
+.form-login-email-password{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+.form-login-email-password input{
+    width: 35%;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    border-radius: .375em;
+    outline-color: #3483fa;
+}
+.form-login-text{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-login-text a{
+    text-decoration: none;
+    color: #1259c3;
+}
+.footer-section i:hover{
+    color: #000;
+}
+
+
+@media (max-width: 361px){
+    .menu{
+        display: none;
+    }
+    .burguer-menu{
+        display: block;
+    }
+    .product{
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 361px) {
+    .descripciones{
+        display: none;
+    }
+    .product:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 0.5s;
+    }
+    .titulares{
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .product{
+        flex-basis: 40%;
+    }
+}
+@media (min-width: 769px){
+    .descripciones{
+        display: block;
+        color: transparent;
+    }
+    .descripciones:hover{
+        color: #000;
+    }
+    .menu{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .product{
+        flex-basis: 40%;
+    }
+}
+@media (max-width: 768px){
+    .cuotas-header{
+        width: 100%;
+    }
+    .buscar{
+        width: 50%;
+    }
+    .input-container input{
+        width: 100%;
+    }
+    .header-container img{
+        width: 50%;
+    }
+    .header-container img, .buscar{
+        flex-basis: 30%;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+    }
+    .cuotas-header p {
+        text-align: center;
+    }
+    .form-register-container{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+    .form-login-email-password input{
+        width: 75%;
+    }
+    .form-register-button button{
+        width: 50%;
+    }
+    .form-register-name-username{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .form-register-name-username input{
+        width: 75%;
+    }
+    .form-register-email-password{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .form-register-email-password input{
+        width: 75%;
+    }
+    .form-register-adress input{
+        width: 75%;
+    }
+    .form-register-date{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .perfil-form-container{
+        flex-direction: column;
+    }
+    .perfil-form-item{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .products{
+        justify-content: center;
+    }
+}
+@media (min-width: 1180px){
+    .input-container{
+        width: 70%;
+    }
+    .product{
+        flex-basis: 20%;
+    }
+    .header-container img{
+        flex-basis: 30%;
+    }
+    .buscar{
+        flex-basis: 30%;
+    }
+    
+}
+@media (max-width: 1179px){
+    .form-login-email-password input{
+        width: 55%;
+    }
+    .form-register-button button{
+        width: 40%;
+    }
+    .product{
+        flex-basis: 40%;
+    }
+}
+@media (max-width: 1500px){
+    .product{
+        flex-basis: 40%;
+    }
+}
